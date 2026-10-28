@@ -1,0 +1,53 @@
+{
+    // ==================================================================
+    // onshape-to-robot configuration — ENVIRONMENT (table, stand, tube,
+    // glory machines) of the "Whole setup" tab.
+    //
+    // The UR10 robot is EXCLUDED here (see "ignore"): it is exported
+    // separately from the "UR10" tab (export/config.json) so that its
+    // 6 revolute joints stay articulable. This export produces ONE
+    // rigid link (all mates are FASTENED) which sync_to_ros.py mounts
+    // in the robot URDF with a fixed joint, aligned by the Onshape
+    // transform of the robot's ROOT-LINK PART (e.g. 'UR10 <1>/Base <3>')
+    // inside "Whole setup" — the pose the robot-tube mate constrains.
+    // ==================================================================
+
+    // "Whole setup" assembly tab (table + stand + tube + glory + UR10)
+    "url": "https://cad.onshape.com/documents/bffb4cd2fd50e50786659d67/w/3349bfe1f84bd89ee3f7e342/e/cc7de4642507bd78d72d7b5e",
+
+    // Output format / names
+    "output_format": "urdf",
+    "output_filename": "environment",   // -> export_env/environment.urdf
+    "assets_directory": "meshes",       // -> export_env/meshes/*.stl
+    "robot_name": "ur10_environment",
+
+    // Mesh references become package:// URIs of the SAME ROS package
+    "package_name": "ur10_robot_description",
+
+    // ---------------------------------------------------------------
+    // Exclude the UR10 robot geometry: it already comes from the UR10
+    // export. Patterns are case-insensitive wildcards matched against
+    // the part names AFTER the " <N>" occurrence suffix is stripped
+    // (no env part name collides with these - verified against the
+    // "Whole setup" occurrence dump in export/inspect/whole_setup.json).
+    // ---------------------------------------------------------------
+    "ignore": {
+        "base": "all",
+        "lower arm": "all",
+        "upper arm": "all",
+        "tool flange": "all",
+        "size 2 joint": "all",
+        "size 3 joint": "all",
+        "size 3 elbow": "all",
+        "size 3_joint lid_r06_simple": "all",
+        "size 4 joint": "all",
+        "31602-step": "all",
+        "ur10": "all",
+        "joint size 2": "all",
+        "joint size 3": "all",
+        "joint size 4": "all"
+    },
+
+    // Keep the generated URDF readable
+    "round_decimals": 6
+}

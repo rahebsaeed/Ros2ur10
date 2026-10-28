@@ -1,0 +1,1005 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/bffb4cd2fd50e50786659d67/w/3349bfe1f84bd89ee3f7e342/e/38aaf680dcf8908fc89106f1 -->
+<robot name="ur10">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part base -->
+    <visual>
+      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/base.stl"/>
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.705882 0.705882 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_2 -->
+    <visual>
+      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/base__2.stl"/>
+      </geometry>
+      <material name="base_2_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/base__2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link joint_size_4 -->
+  <link name="joint_size_4">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part size_4_joint -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl"/>
+      </geometry>
+      <material name="size_4_joint_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_2 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl"/>
+      </geometry>
+      <material name="size_4_joint_2_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_3 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl"/>
+      </geometry>
+      <material name="size_4_joint_3_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_4 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl"/>
+      </geometry>
+      <material name="size_4_joint_4_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_5 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl"/>
+      </geometry>
+      <material name="size_4_joint_5_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_6 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl"/>
+      </geometry>
+      <material name="size_4_joint_6_material">
+        <color rgba="0.74902 0.823529 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_7 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl"/>
+      </geometry>
+      <material name="size_4_joint_7_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_8 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl"/>
+      </geometry>
+      <material name="size_4_joint_8_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link joint_size_4_2 -->
+  <link name="joint_size_4_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part upper_arm -->
+    <visual>
+      <origin xyz="-0 0.0792 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/upper_arm.stl"/>
+      </geometry>
+      <material name="upper_arm_material">
+        <color rgba="0.705882 0.705882 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.0792 -0.09" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/upper_arm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_joint -->
+    <visual>
+      <origin xyz="-0.01 0.5466 -0.015841" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_joint.stl"/>
+      </geometry>
+      <material name="size_3_joint_material">
+        <color rgba="0.196078 0.196078 0.196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.01 0.5466 -0.015841" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_joint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_9 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl"/>
+      </geometry>
+      <material name="size_4_joint_9_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_10 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl"/>
+      </geometry>
+      <material name="size_4_joint_10_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_11 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl"/>
+      </geometry>
+      <material name="size_4_joint_11_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_12 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl"/>
+      </geometry>
+      <material name="size_4_joint_12_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_13 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl"/>
+      </geometry>
+      <material name="size_4_joint_13_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_14 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl"/>
+      </geometry>
+      <material name="size_4_joint_14_material">
+        <color rgba="0.74902 0.823529 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_15 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl"/>
+      </geometry>
+      <material name="size_4_joint_15_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_4_joint_16 -->
+    <visual>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl"/>
+      </geometry>
+      <material name="size_4_joint_16_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.09" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_joint_lid_r06_simple -->
+    <visual>
+      <origin xyz="0.000602 0.613184 -0.09213" rpy="3.14159 -1.54438 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl"/>
+      </geometry>
+      <material name="size_3_joint_lid_r06_simple_material">
+        <color rgba="0.501961 0.501961 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000602 0.613184 -0.09213" rpy="3.14159 -1.54438 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl"/>
+      </geometry>
+      <material name="size_3_elbow_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_2 -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl"/>
+      </geometry>
+      <material name="size_3_elbow_2_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_3 -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl"/>
+      </geometry>
+      <material name="size_3_elbow_3_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_4 -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl"/>
+      </geometry>
+      <material name="size_3_elbow_4_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_5 -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl"/>
+      </geometry>
+      <material name="size_3_elbow_5_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_6 -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl"/>
+      </geometry>
+      <material name="size_3_elbow_6_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_7 -->
+    <visual>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl"/>
+      </geometry>
+      <material name="size_3_elbow_7_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link lower_arm -->
+  <link name="lower_arm">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part lower_arm -->
+    <visual>
+      <origin xyz="-0.100378 0.296157 -0.037464" rpy="-1.5708 -0 1.88391"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/lower_arm.stl"/>
+      </geometry>
+      <material name="lower_arm_material">
+        <color rgba="0.705882 0.705882 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.100378 0.296157 -0.037464" rpy="-1.5708 -0 1.88391"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/lower_arm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint -->
+    <visual>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl"/>
+      </geometry>
+      <material name="size_2_joint_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_2 -->
+    <visual>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl"/>
+      </geometry>
+      <material name="size_2_joint_2_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_3 -->
+    <visual>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl"/>
+      </geometry>
+      <material name="size_2_joint_3_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_4 -->
+    <visual>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl"/>
+      </geometry>
+      <material name="size_2_joint_4_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 31602_step -->
+    <visual>
+      <origin xyz="-0.176063 0.543809 0.008" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl"/>
+      </geometry>
+      <material name="31602_step_material">
+        <color rgba="0.333333 0.862745 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.176063 0.543809 0.008" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_5 -->
+    <visual>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl"/>
+      </geometry>
+      <material name="size_2_joint_5_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_joint_lid_r06_simple_2 -->
+    <visual>
+      <origin xyz="0.000273 -0.000843 -0.06183" rpy="-3.14159 -1.54438 -1.25769"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl"/>
+      </geometry>
+      <material name="size_3_joint_lid_r06_simple_2_material">
+        <color rgba="0.501961 0.501961 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000273 -0.000843 -0.06183" rpy="-3.14159 -1.54438 -1.25769"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_8 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl"/>
+      </geometry>
+      <material name="size_3_elbow_8_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_9 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl"/>
+      </geometry>
+      <material name="size_3_elbow_9_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_10 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl"/>
+      </geometry>
+      <material name="size_3_elbow_10_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_11 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl"/>
+      </geometry>
+      <material name="size_3_elbow_11_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_12 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl"/>
+      </geometry>
+      <material name="size_3_elbow_12_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_13 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl"/>
+      </geometry>
+      <material name="size_3_elbow_13_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_3_elbow_14 -->
+    <visual>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl"/>
+      </geometry>
+      <material name="size_3_elbow_14_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link joint_size_2 -->
+  <link name="joint_size_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part size_2_joint_6 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl"/>
+      </geometry>
+      <material name="size_2_joint_6_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_7 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl"/>
+      </geometry>
+      <material name="size_2_joint_7_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_8 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl"/>
+      </geometry>
+      <material name="size_2_joint_8_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_9 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl"/>
+      </geometry>
+      <material name="size_2_joint_9_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 31602_step_2 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl"/>
+      </geometry>
+      <material name="31602_step_2_material">
+        <color rgba="0.333333 0.862745 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_10 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl"/>
+      </geometry>
+      <material name="size_2_joint_10_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link joint_size_2_2 -->
+  <link name="joint_size_2_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part size_2_joint_11 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl"/>
+      </geometry>
+      <material name="size_2_joint_11_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_12 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl"/>
+      </geometry>
+      <material name="size_2_joint_12_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_13 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl"/>
+      </geometry>
+      <material name="size_2_joint_13_material">
+        <color rgba="0.392157 0.392157 0.392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_14 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl"/>
+      </geometry>
+      <material name="size_2_joint_14_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 31602_step_3 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl"/>
+      </geometry>
+      <material name="31602_step_3_material">
+        <color rgba="0.333333 0.862745 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_joint_15 -->
+    <visual>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl"/>
+      </geometry>
+      <material name="size_2_joint_15_material">
+        <color rgba="0.882353 0.882353 0.882353 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tool_flange -->
+  <link name="tool_flange">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <!-- Part tool_flange -->
+    <visual>
+      <origin xyz="-0.065893 0.02951 -0.028674" rpy="1.5708 -0 2.34692"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/tool_flange.stl"/>
+      </geometry>
+      <material name="tool_flange_material">
+        <color rgba="0.705882 0.705882 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.065893 0.02951 -0.028674" rpy="1.5708 -0 2.34692"/>
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/tool_flange.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from joint_size_2_2 to tool_flange -->
+  <joint name="Revolute_4" type="revolute">
+    <origin xyz="-1e-06 -0.0617 -0.054" rpy="-1.5708 0 -0"/>
+    <parent link="joint_size_2_2"/>
+    <child link="tool_flange"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="54" velocity="6.28" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from joint_size_2 to joint_size_2_2 -->
+  <joint name="Revolute_3" type="revolute">
+    <origin xyz="-1e-06 -0.0617 -0.054" rpy="1.5708 1.39214 3.14159"/>
+    <parent link="joint_size_2"/>
+    <child link="joint_size_2_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="54" velocity="6.28" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from lower_arm to joint_size_2 -->
+  <joint name="Revolute_2" type="revolute">
+    <origin xyz="-0.176063 0.543809 0.002" rpy="-3.14159 0 1.65485"/>
+    <parent link="lower_arm"/>
+    <child link="joint_size_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="54" velocity="6.28" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from joint_size_4_2 to lower_arm -->
+  <joint name="elbow" type="revolute">
+    <origin xyz="0.000601 0.612299 -0.021891" rpy="3.14159 -0 -0"/>
+    <parent link="joint_size_4_2"/>
+    <child link="lower_arm"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="150" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from joint_size_4 to joint_size_4_2 -->
+  <joint name="shoulder" type="revolute">
+    <origin xyz="-0 0.086 -0.09" rpy="-1.5708 -0.257718 -3.14159"/>
+    <parent link="joint_size_4"/>
+    <child link="joint_size_4_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="300" velocity="3.15" lower="-0.26588" upper="1.82851"/>
+  </joint>
+  <!-- Joint from base to joint_size_4 -->
+  <joint name="Revolute_base" type="revolute">
+    <origin xyz="-0 -0 0.038" rpy="-3.14159 0 3.14159"/>
+    <parent link="base"/>
+    <child link="joint_size_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="300" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>

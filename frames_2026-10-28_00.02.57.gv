@@ -1,0 +1,12 @@
+digraph G {
+"lower_arm" -> "joint_size_2"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1793145777.712006\nOldest transform: 1793145772.711776\n"];
+"joint_size_4_2" -> "lower_arm"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1793145777.712006\nOldest transform: 1793145772.711776\n"];
+"joint_size_2" -> "joint_size_2_2"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1793145777.712006\nOldest transform: 1793145772.711776\n"];
+"joint_size_2_2" -> "tool_flange"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1793145777.712006\nOldest transform: 1793145772.711776\n"];
+"base" -> "joint_size_4"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1793145777.712006\nOldest transform: 1793145772.711776\n"];
+"joint_size_4" -> "joint_size_4_2"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1793145777.712006\nOldest transform: 1793145772.711776\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1793145777.7602458"[ shape=plaintext ] ;
+}->"base";
+}

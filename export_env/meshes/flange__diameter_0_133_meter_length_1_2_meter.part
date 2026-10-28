@@ -1,0 +1,13 @@
+{
+    "configuration": "Diameter=0.133+meter;Length=1.2+meter",
+    "documentId": "bffb4cd2fd50e50786659d67",
+    "documentMicroversion": "12b50766b73f30e8e606691e",
+    "elementId": "315ebd7f9dab825e39a6f68c",
+    "fullConfiguration": "Diameter=0.133+meter;Length=1.2+meter",
+    "id": "M16kvPPWVc6UQLx6q",
+    "isStandardContent": false,
+    "name": "flange <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

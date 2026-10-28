@@ -1,0 +1,165 @@
+23:47:49
+Onshape -> URDF export (onshape-to-robot)
+================================================================
+[1/2] Pre-flight: checking that the assembly has DOF mates ...
+       dof_* joints : 6
+       total mates  : 6
+
+[2/2] Running: /home/raheb/Documents/Projects/Ros2/UR10/.venv/bin/onshape-to-robot export
+----------------------------------------------------------------
+[34m* onshape-to-robot version 1.8.3[0m
+[1m* Using configuration workspace ID 3349bfe1f84bd89ee3f7e342 ...[0m
+[1m* Using configuration element ID 38aaf680dcf8908fc89106f1 ...[0m
+[1m* Retrieving assembly with id 38aaf680dcf8908fc89106f1[0m
+[33mWARNING: joint dof_Revolute_base of type revolute has no limits[0m
+[32m+ Found DOF: Revolute_base (revolute) [0m
+[33mWARNING: joint dof_elbow of type revolute has no limits[0m
+[32m+ Found DOF: elbow (revolute) [0m
+[32m+ Found DOF: shoulder (revolute) [-0.266: 1.829][0m
+[33mWARNING: joint dof_Revolute_2 of type revolute has no limits[0m
+[32m+ Found DOF: Revolute_2 (revolute) [0m
+[33mWARNING: joint dof_Revolute_3 of type revolute has no limits[0m
+[32m+ Found DOF: Revolute_3 (revolute) [0m
+[33mWARNING: joint dof_Revolute_4 of type revolute has no limits[0m
+[32m+ Found DOF: Revolute_4 (revolute) [0m
+[32m* Found total 6 degrees of freedom[0m
+[32m* Found 1 root nodes:[0m
+[32m  - Base <2>[0m
+
+[32m+ Adding part Base <3>[0m
+[33mWARNING: part Base <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Base <2>[0m
+[33mWARNING: Parts with same name "base", incrementing STL name to "base__2"[0m
+[33mWARNING: part Base <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <1>[0m
+[33mWARNING: part Size 4 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <2>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__2"[0m
+[33mWARNING: part Size 4 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <6>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__3"[0m
+[33mWARNING: part Size 4 Joint <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <4>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__4"[0m
+[33mWARNING: part Size 4 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <3>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__5"[0m
+[33mWARNING: part Size 4 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <5>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__6"[0m
+[33mWARNING: part Size 4 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <8>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__7"[0m
+[33mWARNING: part Size 4 Joint <8> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <7>[0m
+[33mWARNING: Parts with same name "size_4_joint", incrementing STL name to "size_4_joint__8"[0m
+[33mWARNING: part Size 4 Joint <7> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Upper arm <1>[0m
+[33mWARNING: part Upper arm <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Joint <7>[0m
+[33mWARNING: part Size 3 Joint <7> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <1>[0m
+[33mWARNING: part Size 4 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <2>[0m
+[33mWARNING: part Size 4 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <6>[0m
+[33mWARNING: part Size 4 Joint <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <4>[0m
+[33mWARNING: part Size 4 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <3>[0m
+[33mWARNING: part Size 4 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <5>[0m
+[33mWARNING: part Size 4 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <8>[0m
+[33mWARNING: part Size 4 Joint <8> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 4 Joint <7>[0m
+[33mWARNING: part Size 4 Joint <7> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3_Joint lid_r06_Simple <1>[0m
+[33mWARNING: part Size 3_Joint lid_r06_Simple <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <3>[0m
+[33mWARNING: part Size 3 Elbow <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <2>[0m
+[33mWARNING: Parts with same name "size_3_elbow", incrementing STL name to "size_3_elbow__2"[0m
+[33mWARNING: part Size 3 Elbow <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <6>[0m
+[33mWARNING: Parts with same name "size_3_elbow", incrementing STL name to "size_3_elbow__3"[0m
+[33mWARNING: part Size 3 Elbow <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <5>[0m
+[33mWARNING: Parts with same name "size_3_elbow", incrementing STL name to "size_3_elbow__4"[0m
+[33mWARNING: part Size 3 Elbow <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <1>[0m
+[33mWARNING: Parts with same name "size_3_elbow", incrementing STL name to "size_3_elbow__5"[0m
+[33mWARNING: part Size 3 Elbow <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <4>[0m
+[33mWARNING: Parts with same name "size_3_elbow", incrementing STL name to "size_3_elbow__6"[0m
+[33mWARNING: part Size 3 Elbow <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <7>[0m
+[33mWARNING: Parts with same name "size_3_elbow", incrementing STL name to "size_3_elbow__7"[0m
+[33mWARNING: part Size 3 Elbow <7> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Lower arm <1>[0m
+[33mWARNING: part Lower arm <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <2>[0m
+[33mWARNING: part Size 2 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <5>[0m
+[33mWARNING: Parts with same name "size_2_joint", incrementing STL name to "size_2_joint__2"[0m
+[33mWARNING: part Size 2 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <1>[0m
+[33mWARNING: Parts with same name "size_2_joint", incrementing STL name to "size_2_joint__3"[0m
+[33mWARNING: part Size 2 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <4>[0m
+[33mWARNING: Parts with same name "size_2_joint", incrementing STL name to "size_2_joint__4"[0m
+[33mWARNING: part Size 2 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part 31602-STEP <1>[0m
+[33mWARNING: part 31602-STEP <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <3>[0m
+[33mWARNING: Parts with same name "size_2_joint", incrementing STL name to "size_2_joint__5"[0m
+[33mWARNING: part Size 2 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3_Joint lid_r06_Simple <1>[0m
+[33mWARNING: part Size 3_Joint lid_r06_Simple <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <3>[0m
+[33mWARNING: part Size 3 Elbow <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <2>[0m
+[33mWARNING: part Size 3 Elbow <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <6>[0m
+[33mWARNING: part Size 3 Elbow <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <5>[0m
+[33mWARNING: part Size 3 Elbow <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <1>[0m
+[33mWARNING: part Size 3 Elbow <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <4>[0m
+[33mWARNING: part Size 3 Elbow <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 3 Elbow <7>[0m
+[33mWARNING: part Size 3 Elbow <7> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <2>[0m
+[33mWARNING: part Size 2 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <5>[0m
+[33mWARNING: part Size 2 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <1>[0m
+[33mWARNING: part Size 2 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <4>[0m
+[33mWARNING: part Size 2 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part 31602-STEP <1>[0m
+[33mWARNING: part 31602-STEP <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <3>[0m
+[33mWARNING: part Size 2 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <2>[0m
+[33mWARNING: part Size 2 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <5>[0m
+[33mWARNING: part Size 2 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <1>[0m
+[33mWARNING: part Size 2 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <4>[0m
+[33mWARNING: part Size 2 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part 31602-STEP <1>[0m
+[33mWARNING: part 31602-STEP <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Size 2 Joint <3>[0m
+[33mWARNING: part Size 2 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Tool flange <1>[0m
+[33mWARNING: part Tool flange <1> has no dynamics (maybe it is a surface)[0m
+[32m* Writing ur10.urdf[0m
+----------------------------------------------------------------
+[OK] URDF  : /home/raheb/Documents/Projects/Ros2/UR10/export/ur10.urdf
+[OK] Meshes: 28 STL files in /home/raheb/Documents/Projects/Ros2/UR10/export/meshes
+
+Next step:  python scripts/sync_to_ros.py
+EXPORT_EXIT=0 (23:49:19)

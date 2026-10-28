@@ -1,0 +1,60 @@
+{
+    // ==================================================================
+    // onshape-to-robot configuration — UR10 robot
+    // Docs: https://onshape-to-robot.readthedocs.io/en/latest/config.html
+    //
+    // Prerequisite: the 6 revolute mates in the Onshape assembly must be
+    // renamed with the `dof_` prefix (see docs/02_onshape_assembly_setup.md):
+    //     dof_Revolute_base, dof_shoulder, dof_elbow,
+    //     dof_Revolute_2, dof_Revolute_3, dof_Revolute_4
+    // ==================================================================
+
+    // Onshape assembly URL (must be the ASSEMBLY tab).
+    // NOTE: points at the "UR10" tab (pure robot with the 6 revolute mates),
+    // NOT the "Whole setup" tab (table + stand + glory machine).
+    "url": "https://cad.onshape.com/documents/bffb4cd2fd50e50786659d67/w/3349bfe1f84bd89ee3f7e342/e/38aaf680dcf8908fc89106f1",
+
+    // Output format / names
+    "output_format": "urdf",
+    "output_filename": "ur10",          // -> export/ur10.urdf
+    "assets_directory": "meshes",       // -> export/meshes/*.stl
+    "robot_name": "ur10",
+
+    // Name of the robot INSTANCE inside the "Whole setup" assembly tab
+    // (as shown in Onshape: "UR10 <1>"). sync_to_ros.py uses it to locate
+    // the robot's root-link part in export/inspect/whole_setup.json and
+    // compute the environment mount — change it if you rename the instance.
+    "robot_instance": "UR10",
+
+    // With this set, mesh references become:
+    //   package://ur10_robot_description/meshes/<part>.stl   (ROS 2 ready)
+    "package_name": "ur10_robot_description",
+
+    // ---------------------------------------------------------------
+    // Exclude NON-robot geometry (the table and the machine that live
+    // in the same assembly). Values: "all" | "visual" | "collision".
+    // Run `make inspect` to see the exact part names in your assembly
+    // and adjust these wildcards if needed.
+    // ---------------------------------------------------------------
+    "ignore": {
+        "table*": "all",
+        "*table*": "all",
+        "*machine*": "all",
+        "*glory*": "all"
+    },
+
+    // Effort / velocity written into the URDF <limit> tags.
+    // "default" applies to every joint; named patterns (wildcards ok)
+    // are merged on top of it.
+    "joint_properties": {
+        "default": { "max_effort": 150.0, "max_velocity": 3.15 },
+        "Revolute_base": { "max_effort": 300.0, "max_velocity": 3.15 },
+        "shoulder": { "max_effort": 300.0, "max_velocity": 3.15 },
+        "Revolute_2": { "max_effort": 54.0, "max_velocity": 6.28 },
+        "Revolute_3": { "max_effort": 54.0, "max_velocity": 6.28 },
+        "Revolute_4": { "max_effort": 54.0, "max_velocity": 6.28 }
+    },
+
+    // Keep the generated URDF readable
+    "round_decimals": 6
+}

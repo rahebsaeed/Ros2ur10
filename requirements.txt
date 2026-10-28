@@ -1,0 +1,4 @@
+onshape-to-robot
+python-dotenv
+requests
+python-pptx

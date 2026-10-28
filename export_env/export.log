@@ -1,0 +1,234 @@
+[34m* onshape-to-robot version 1.8.3[0m
+[1m* Using configuration workspace ID 3349bfe1f84bd89ee3f7e342 ...[0m
+[1m* Using configuration element ID cc7de4642507bd78d72d7b5e ...[0m
+[1m* Retrieving assembly with id cc7de4642507bd78d72d7b5e[0m
+[32m* Found total 0 degrees of freedom[0m
+[32m* Found 1 root nodes:[0m
+[32m  - stand <1>[0m
+
+[32m+ Adding part table big <1>[0m
+[33mWARNING: part table big <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_2 <3>[0m
+[33mWARNING: part Ñâÿçü_20õ40_2 <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ïðèñïîñîáëåíèå_äëÿ_ñâàðêè <1>[0m
+[33mWARNING: part Ïðèñïîñîáëåíèå_äëÿ_ñâàðêè <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_2 <6>[0m
+[33mWARNING: part Ñâÿçü_20õ40_2 <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ðåáðî_40õ40 <3>[0m
+[33mWARNING: part Ðåáðî_40õ40 <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_2 <5>[0m
+[33mWARNING: part Ñâÿçü_20õ40_2 <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_2 <2>[0m
+[33mWARNING: part Ñâÿçü_20õ40_2 <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ðåáðî_40õ40 <1>[0m
+[33mWARNING: part Ðåáðî_40õ40 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ðåáðî_40õ40 <2>[0m
+[33mWARNING: part Ðåáðî_40õ40 <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_1 <1>[0m
+[33mWARNING: part Ñâÿçü_20õ40_1 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_1 <2>[0m
+[33mWARNING: part Ñâÿçü_20õ40_1 <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_1 <3>[0m
+[33mWARNING: part Ñâÿçü_20õ40_1 <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_2 <4>[0m
+[33mWARNING: part Ñâÿçü_20õ40_2 <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Ñâÿçü_20õ40_2 <1>[0m
+[33mWARNING: part Ñâÿçü_20õ40_2 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Äèñê_âåðõíèé <1>[0m
+[33mWARNING: part Äèñê_âåðõíèé <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Glory_part2 <1>[0m
+[33mWARNING: part Glory_part2 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Glory_part1 <2>[0m
+[33mWARNING: part Glory_part1 <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Glory_part1 <1>[0m
+[33mWARNING: part Glory_part1 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Glory_part2 <1>[0m
+[33mWARNING: part Glory_part2 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Glory_part1 <2>[0m
+[33mWARNING: part Glory_part1 <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Glory_part1 <1>[0m
+[33mWARNING: part Glory_part1 <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Base <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Base <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Tool flange <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Tool flange <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Lower arm <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Lower arm <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Base <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Base <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Upper arm <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Upper arm <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Joint <7>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Joint <7> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part flange <1>[2m (configuration: Diameter=0.133+meter;Length=1.2+meter)[0m[0m
+[33mWARNING: part flange <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part flange <2>[2m (configuration: Diameter=0.133+meter;Length=0.7000000000000001+meter)[0m[0m
+[33mWARNING: part flange <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part tube133 <1>[2m (configuration: Diameter=0.133+meter;Length=0.8+meter)[0m[0m
+[33mWARNING: part tube133 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <2>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_ñâÿçåé <3>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_ñâÿçåé <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Âòóëêà_ðåçüáîâàÿ <4>[0m
+[33mWARNING: part Âòóëêà_ðåçüáîâàÿ <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <1>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <5>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_ñâÿçåé <1>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_ñâÿçåé <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Îïîðà_øàðíèðíàÿ <2>[0m
+[33mWARNING: part Îïîðà_øàðíèðíàÿ <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Òðóáà_40õ40õ500 <1>[0m
+[33mWARNING: part Òðóáà_40õ40õ500 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 <1>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Âòóëêà_ðåçüáîâàÿ <3>[0m
+[33mWARNING: part Âòóëêà_ðåçüáîâàÿ <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 <2>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Âòóëêà_ðåçüáîâàÿ <6>[0m
+[33mWARNING: part Âòóëêà_ðåçüáîâàÿ <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 <3>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Îïîðà_øàðíèðíàÿ <1>[0m
+[33mWARNING: part Îïîðà_øàðíèðíàÿ <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Òðóáà_40õ40õ500 <1>[0m
+[33mWARNING: Parts with same name "òðóáà_40õ40õ500", incrementing STL name to "òðóáà_40õ40õ500__2"[0m
+[33mWARNING: part Òðóáà_40õ40õ500 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Îïîðà_øàðíèðíàÿ <6>[0m
+[33mWARNING: part Îïîðà_øàðíèðíàÿ <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Îïîðà_øàðíèðíàÿ <5>[0m
+[33mWARNING: part Îïîðà_øàðíèðíàÿ <5> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Âòóëêà_ðåçüáîâàÿ <2>[0m
+[33mWARNING: part Âòóëêà_ðåçüáîâàÿ <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Îïîðà_øàðíèðíàÿ <3>[0m
+[33mWARNING: part Îïîðà_øàðíèðíàÿ <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Îïîðà_øàðíèðíàÿ <4>[0m
+[33mWARNING: part Îïîðà_øàðíèðíàÿ <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <6>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <6> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Òðóáà_40õ40õ500 <1>[0m
+[33mWARNING: Parts with same name "òðóáà_40õ40õ500", incrementing STL name to "òðóáà_40õ40õ500__3"[0m
+[33mWARNING: part Òðóáà_40õ40õ500 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_ñâÿçåé <2>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_ñâÿçåé <2> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Òðóáà_40õ40õ500 <1>[0m
+[33mWARNING: Parts with same name "òðóáà_40õ40õ500", incrementing STL name to "òðóáà_40õ40õ500__4"[0m
+[33mWARNING: part Òðóáà_40õ40õ500 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Òðóáà_40õ40õ500 <1>[0m
+[33mWARNING: Parts with same name "òðóáà_40õ40õ500", incrementing STL name to "òðóáà_40õ40õ500__5"[0m
+[33mWARNING: part Òðóáà_40õ40õ500 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Âòóëêà_ðåçüáîâàÿ <1>[0m
+[33mWARNING: part Âòóëêà_ðåçüáîâàÿ <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <4>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <4> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <3>[0m
+[33mWARNING: part Êîñûíêà_Îñíîâàíèÿ_íèæíåãî_íèæíÿÿ <3> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Òðóáà_40õ40õ500 <1>[0m
+[33mWARNING: Parts with same name "òðóáà_40õ40õ500", incrementing STL name to "òðóáà_40õ40õ500__6"[0m
+[33mWARNING: part Òðóáà_40õ40õ500 <1> has no dynamics (maybe it is a surface)[0m
+[32m+ Adding part Âòóëêà_ðåçüáîâàÿ <5>[0m
+[33mWARNING: part Âòóëêà_ðåçüáîâàÿ <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <6>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <6> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <8>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <8> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <7>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <7> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <6>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <6> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <8>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <8> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 4 Joint <7>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 4 Joint <7> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part 31602-STEP <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part 31602-STEP <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part 31602-STEP <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part 31602-STEP <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3_Joint lid_r06_Simple <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3_Joint lid_r06_Simple <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <6>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <6> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <7>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <7> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part 31602-STEP <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part 31602-STEP <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 2 Joint <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 2 Joint <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3_Joint lid_r06_Simple <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3_Joint lid_r06_Simple <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <3>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <3> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <2>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <2> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <6>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <6> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <5>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <5> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <1>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <1> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <4>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <4> has no dynamics (maybe it is a surface)[0m
+[32m- Adding part Size 3 Elbow <7>[2m / [0m[2m(ignoring visual)[0m[2m (ignoring collision)[0m[0m
+[33mWARNING: part Size 3 Elbow <7> has no dynamics (maybe it is a surface)[0m
+[32m* Writing environment.urdf[0m
