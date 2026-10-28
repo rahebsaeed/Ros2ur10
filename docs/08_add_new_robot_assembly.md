@@ -118,6 +118,40 @@ joint, the cell (if any) stays fixed.
 > `make sync` refuses to run with **0 non-fixed joints** — a static model can
 > never pass for a robot.
 
+### Environment mount (optional — the cell must contain the robot)
+
+The **cell/environment is optional**. If `export_env/environment.urdf` does
+not exist, `make sync` prints `[INFO] ... skipping environment merge` and
+produces a robot-only URDF — that is the correct state for a new robot with
+no cell yet.
+
+When you DO have a cell, `sync` computes the mount from the cell dump
+(`export/inspect/whole_setup.json`, produced by `make urdf-env` from the tab
+in `export_env/config.json`). It needs **both**:
+
+* `robot_instance` in `export/config.json` = the robot's instance name inside
+  the cell tab (prefix match, `"UR10"` → `'UR10 <1>'`),
+* the robot's **root-link part** (e.g. `planetary_gearbox`) present under that
+  instance in the dump.
+
+Otherwise `make sync` stops with:
+
+```
+[FAIL] No '<root link>' part occurrence under the robot instance '...'
+       in the Whole setup dump.
+```
+
+| Cause | Fix |
+|---|---|
+| Dump stale (robot changed since the last dump) | `make urdf-env` |
+| Wrong instance name | fix `robot_instance` in `export/config.json` (the error lists the available top-level instances) |
+| Robot not placed in that cell tab (or no cell) | delete `export_env/environment.urdf` → `make sync` runs robot-only |
+
+To add a cell **later**: create a cell tab **in the same document as the
+robot**, place the robot instance in it (mates `FASTENED` for the cell), point
+`export_env/config.json` → `url` at that tab, set `robot_instance`, then
+`make urdf-env sync build`.
+
 ---
 
 ## B. Modify the project for another robot (replace the UR10)

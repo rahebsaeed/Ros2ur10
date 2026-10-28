@@ -66,7 +66,7 @@ Change at least:
 make check      # .env keys + document access
 make inspect    # real instance/mate/part names (for ignore, robot_instance)
 make urdf       # robot  -> export/<name>.urdf + meshes
-make urdf-env   # cell   -> export_env/ (+ dump used for the mount)
+make urdf-env   # cell   -> export_env/ (only if you have a cell tab)
 ```
 
 Gate: the export must contain **≥ 1 non-fixed joint**, otherwise `make sync`

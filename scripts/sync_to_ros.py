@@ -230,11 +230,28 @@ def load_mount_transform(
             names.get(o["path"][1], "") for o in occurrences
             if len(o.get("path", [])) == 2 and o["path"][0] == robot_id
         )
+        top = sorted(
+            {str(names.get(o["path"][0], "")) for o in occurrences
+             if len(o.get("path", [])) == 1}
+        )
         sys.exit(
             f"[FAIL] No {robot_root_link!r} part occurrence under the robot\n"
             f"       instance {robot_instance!r} in the Whole setup dump.\n"
             f"       Robot parts found: {parts}\n"
-            "       Check 'robot_instance' in export/config.json."
+            f"       Top-level instances in the dump: {top}\n"
+            "\n"
+            "       The dump comes from the cell tab in export_env/config.json.\n"
+            "       Most likely causes:\n"
+            "         1. Stale dump (the robot changed since the last dump)\n"
+            "            -> re-run:  make urdf-env\n"
+            "         2. Wrong instance name -> fix 'robot_instance' in\n"
+            "            export/config.json (prefix of the instance name,\n"
+            "            e.g. \"UR10\" matches 'UR10 <1>')\n"
+            "         3. This robot is NOT placed in that cell tab (new robot\n"
+            "            with no cell yet) -> nothing to mount: delete\n"
+            "            export_env/environment.urdf and re-run  make sync\n"
+            "            (the environment merge is skipped automatically)\n"
+            "       See docs/08_add_new_robot_assembly.md -> 'Environment mount'."
         )
 
     # 3) T_R_part: root link's <visual> origin in the robot URDF

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="ur10">
-  <!-- Link base -->
-  <link name="base">
+  <!-- Link planetary_gearbox -->
+  <link name="planetary_gearbox">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
@@ -9,7 +9,7 @@
     </inertial>
     <!-- Part base -->
     <visual>
-      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0" />
+      <origin xyz="0 0.00144 0" rpy="-0 0 -3.14159" />
       <geometry>
         <mesh filename="package://ur10_robot_description/meshes/base.stl" />
       </geometry>
@@ -18,1913 +18,2298 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0" />
+      <origin xyz="0 0.00144 0" rpy="-0 0 -3.14159" />
       <geometry>
         <mesh filename="package://ur10_robot_description/meshes/base.stl" />
       </geometry>
     </collision>
-    <!-- Part base_2 -->
+    <!-- Part part_16 -->
     <visual>
-      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0" />
+      <origin xyz="0 0.00144 0.079" rpy="-0 -0 -2.2471" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/base__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="base_2_material">
-        <color rgba="0.80 0.82 0.85 1" />
+      <material name="part_16_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0 -0 0" rpy="1.5708 -0 -0" />
+      <origin xyz="0 0.00144 0.079" rpy="-0 -0 -2.2471" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/base__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_17 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.05085" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+      <material name="part_17_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.05085" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_2 -->
+    <visual>
+      <origin xyz="0 0.00144 0.07" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.07" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.07" rpy="0 -0 1.94169" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.07" rpy="0 -0 1.94169" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_3 -->
+    <visual>
+      <origin xyz="0 0.00144 0.07" rpy="-0 -0 -2.2471" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.07" rpy="-0 -0 -2.2471" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth -->
+    <visual>
+      <origin xyz="0.025917 -0.021922 0.0511" rpy="0 -0 -1.72032" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.025917 -0.021922 0.0511" rpy="0 -0 -1.72032" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_4 -->
+    <visual>
+      <origin xyz="0 0.00144 0.07" rpy="0 -0 1.94169" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_4_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.07" rpy="0 -0 1.94169" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_2 -->
+    <visual>
+      <origin xyz="0.031569 -0.000156 0.051" rpy="-0 0 -2.04272" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__2.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_2_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.031569 -0.000156 0.051" rpy="-0 0 -2.04272" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__2.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_7 -->
+    <visual>
+      <origin xyz="0 0.00144 0.051" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_7.stl" />
+      </geometry>
+      <material name="part_7_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.051" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_7.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_14 -->
+    <visual>
+      <origin xyz="0 0.00144 0.051" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_14.stl" />
+      </geometry>
+      <material name="part_14_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.051" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_14.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_5 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_5_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_6 -->
+    <visual>
+      <origin xyz="0 0.00144 0.079" rpy="0 -0 1.94169" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_6_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.079" rpy="0 -0 1.94169" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_12 -->
+    <visual>
+      <origin xyz="0 0.00144 0.051" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_12.stl" />
+      </geometry>
+      <material name="part_12_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.051" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_12.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_50x65x7 -->
+    <visual>
+      <origin xyz="0 0.00144 0.077" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_50x65x7.stl" />
+      </geometry>
+      <material name="bearing_50x65x7_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.077" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_50x65x7.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_13 -->
+    <visual>
+      <origin xyz="0 0.00144 0.051" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_13.stl" />
+      </geometry>
+      <material name="part_13_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.051" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_13.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_2 -->
+    <visual>
+      <origin xyz="0 0.00144 0.07" rpy="-0 -0 -2.2471" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.07" rpy="-0 -0 -2.2471" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__15_teeth -->
+    <visual>
+      <origin xyz="0 0.00144 0.051" rpy="0 0 -2.24424" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__15_teeth.stl" />
+      </geometry>
+      <material name="spur_gear__15_teeth_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.051" rpy="0 0 -2.24424" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__15_teeth.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_3 -->
+    <visual>
+      <origin xyz="-0.000806 -0.014492 0.051" rpy="0 0 -0.995525" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__3.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_3_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000806 -0.014492 0.051" rpy="0 0 -0.995525" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__3.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_7 -->
+    <visual>
+      <origin xyz="0 0.00144 0.079" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_7_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.079" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="0 0.00144 -0" rpy="-0 0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1.stl" />
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 -0" rpy="-0 0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_5 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5.stl" />
+      </geometry>
+      <material name="part_5_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_4 -->
+    <visual>
+      <origin xyz="0.014399 0.017414 0.0511" rpy="0 -0 -2.76752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__4.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_4_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.014399 0.017414 0.0511" rpy="0 -0 -2.76752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__4.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_10x19x5 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0751" rpy="-0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+      <material name="bearing_10x19x5_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0751" rpy="-0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_5 -->
+    <visual>
+      <origin xyz="-0.029154 -7.2e-05 0.0511" rpy="-0 -0 -2.24392" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__5.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_5_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.029154 -7.2e-05 0.0511" rpy="-0 -0 -2.24392" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_6 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6.stl" />
+      </geometry>
+      <material name="part_6_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_3 -->
+    <visual>
+      <origin xyz="0 0.00144 0.07" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.07" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_6 -->
+    <visual>
+      <origin xyz="-0.016508 0.019706 0.051" rpy="0 0 -1.51912" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__6.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_6_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.016508 0.019706 0.051" rpy="0 0 -1.51912" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__6.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_11 -->
+    <visual>
+      <origin xyz="0 0.00144 0.051" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_11.stl" />
+      </geometry>
+      <material name="part_11_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.051" rpy="0 0 -0.152707" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_11.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_4 -->
+    <visual>
+      <origin xyz="0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_4_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.0511" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_10x19x5_2 -->
+    <visual>
+      <origin xyz="0 0.00144 0.0391" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+      <material name="bearing_10x19x5_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00144 0.0391" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_8 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0601" rpy="0 -0 -1.84127" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_8_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0601" rpy="0 -0 -1.84127" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_9 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0601" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_9_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0601" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_17_2 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.05985" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+      <material name="part_17_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.05985" rpy="0 0 2.34752" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_10 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0601" rpy="-0 -0 0.253122" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_10_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0601" rpy="-0 -0 0.253122" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_5 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 -0 -1.84127" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_5_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 -0 -1.84127" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_11 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 -0 -1.84127" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_11_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="0 -0 -1.84127" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_6 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="-0 -0 0.253122" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_6_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="-0 -0 0.253122" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_12 -->
+    <visual>
+      <origin xyz="-0 0.00144 0.0511" rpy="-0 -0 0.253122" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_12_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0.00144 0.0511" rpy="-0 -0 0.253122" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Link joint_size_4 -->
-  <link name="joint_size_4">
+  <!-- Link planetary_gearbox_2 -->
+  <link name="planetary_gearbox_2">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
-    <!-- Part size_4_joint -->
+    <!-- Part joint_connector -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="0 0 0" rpy="-3.14159 0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/joint_connector.stl" />
       </geometry>
-      <material name="size_4_joint_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="joint_connector_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="0 0 0" rpy="-3.14159 0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/joint_connector.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_2 -->
+    <!-- Part part_16_13 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.043 0 -0.05" rpy="-1.5708 0.984761 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_4_joint_2_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="part_16_13_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.043 0 -0.05" rpy="-1.5708 0.984761 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_3 -->
+    <!-- Part part_17_3 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.01485 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
       </geometry>
-      <material name="size_4_joint_3_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="part_17_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.01485 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_4 -->
+    <!-- Part part_16_14 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_4_joint_4_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="part_16_14_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_5 -->
+    <!-- Part part_15_7 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 -1.10963 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
       </geometry>
-      <material name="size_4_joint_5_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="part_15_7_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 -1.10963 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_6 -->
+    <!-- Part part_16_15 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 0.984761 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_4_joint_6_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="part_16_15_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 0.984761 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_7 -->
+    <!-- Part spur_gear__24_teeth_7 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.0151 -0.022177 -0.052111" rpy="1.5708 -0.344326 -1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth.stl" />
       </geometry>
-      <material name="size_4_joint_7_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="spur_gear__24_teeth_7_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.0151 -0.022177 -0.052111" rpy="1.5708 -0.344326 -1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth.stl" />
       </geometry>
     </collision>
-    <!-- Part size_4_joint_8 -->
+    <!-- Part part_16_16 -->
     <visual>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 -1.10963 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_4_joint_8_material">
-        <color rgba="0.00 0.42 0.68 1" />
+      <material name="part_16_16_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.09" rpy="0 -0 -0" />
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 -1.10963 1.5708" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_8 -->
+    <visual>
+      <origin xyz="-0.015 -0.009437 -0.079057" rpy="-1.5708 -1.40391 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__2.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_8_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 -0.009437 -0.079057" rpy="-1.5708 -1.40391 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__2.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_7_2 -->
+    <visual>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_7.stl" />
+      </geometry>
+      <material name="part_7_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_7.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_14_2 -->
+    <visual>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_14.stl" />
+      </geometry>
+      <material name="part_14_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_14.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_17 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_17_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_18 -->
+    <visual>
+      <origin xyz="-0.043 0 -0.05" rpy="-1.5708 -1.10963 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_18_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.043 0 -0.05" rpy="-1.5708 -1.10963 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_12_2 -->
+    <visual>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_12.stl" />
+      </geometry>
+      <material name="part_12_2_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_12.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_50x65x7_2 -->
+    <visual>
+      <origin xyz="-0.041 0 -0.05" rpy="1.5708 -0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_50x65x7.stl" />
+      </geometry>
+      <material name="bearing_50x65x7_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.041 0 -0.05" rpy="1.5708 -0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_50x65x7.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_13_2 -->
+    <visual>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_13.stl" />
+      </geometry>
+      <material name="part_13_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_13.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_8 -->
+    <visual>
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 0.984761 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_8_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.034 0 -0.05" rpy="-1.5708 0.984761 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__15_teeth_2 -->
+    <visual>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0.054645 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__15_teeth.stl" />
+      </geometry>
+      <material name="spur_gear__15_teeth_2_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0.054645 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__15_teeth.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_9 -->
+    <visual>
+      <origin xyz="-0.015 0.036692 -0.061916" rpy="-1.5708 -0.356715 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__3.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_9_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0.036692 -0.061916" rpy="-1.5708 -0.356715 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__3.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_19 -->
+    <visual>
+      <origin xyz="-0.043 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_19_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.043 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_1_2 -->
+    <visual>
+      <origin xyz="0.036 0 -0.05" rpy="1.5708 -0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1.stl" />
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.036 0 -0.05" rpy="1.5708 -0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_5_2 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5.stl" />
+      </geometry>
+      <material name="part_5_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_10 -->
+    <visual>
+      <origin xyz="-0.0151 -0.003344 -0.01486" rpy="1.5708 0.702872 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__4.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_10_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 -0.003344 -0.01486" rpy="1.5708 0.702872 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__4.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_10x19x5_3 -->
+    <visual>
+      <origin xyz="-0.0391 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+      <material name="bearing_10x19x5_3_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0391 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_11 -->
+    <visual>
+      <origin xyz="-0.0151 0.022976 -0.068983" rpy="1.5708 0.179273 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__5.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_11_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0.022976 -0.068983" rpy="1.5708 0.179273 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_6_2 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6.stl" />
+      </geometry>
+      <material name="part_6_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_9 -->
+    <visual>
+      <origin xyz="-0.034 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_9_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.034 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_12 -->
+    <visual>
+      <origin xyz="-0.015 -0.01625 -0.018118" rpy="-1.5708 -0.880314 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__6.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_12_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 -0.01625 -0.018118" rpy="-1.5708 -0.880314 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__6.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_11_2 -->
+    <visual>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_11.stl" />
+      </geometry>
+      <material name="part_11_2_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 -0.05" rpy="1.5708 0.062436 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_11.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_10 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_10_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_10x19x5_4 -->
+    <visual>
+      <origin xyz="-0.0031 0 -0.05" rpy="1.5708 -0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+      <material name="bearing_10x19x5_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0031 0 -0.05" rpy="1.5708 -0 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_20 -->
+    <visual>
+      <origin xyz="-0.0241 0 -0.05" rpy="-1.5708 0.51309 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_20_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0241 0 -0.05" rpy="-1.5708 0.51309 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_21 -->
+    <visual>
+      <origin xyz="-0.0241 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_21_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0241 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_17_4 -->
+    <visual>
+      <origin xyz="-0.02385 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+      <material name="part_17_4_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02385 0 -0.05" rpy="1.5708 -1.56029 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_22 -->
+    <visual>
+      <origin xyz="-0.0241 0 -0.05" rpy="1.5708 0.534107 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_22_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0241 0 -0.05" rpy="1.5708 0.534107 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_11 -->
+    <visual>
+      <origin xyz="-0.0151 -0 -0.05" rpy="-1.5708 0.51309 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_11_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 -0 -0.05" rpy="-1.5708 0.51309 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_23 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="-1.5708 0.51309 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_23_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="-1.5708 0.51309 1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_12 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 0.534107 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_12_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 0.534107 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_24 -->
+    <visual>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 0.534107 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_24_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.05" rpy="1.5708 0.534107 -1.5708" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Link joint_size_4_2 -->
-  <link name="joint_size_4_2">
+  <!-- Link arm -->
+  <link name="arm">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
-    <!-- Part upper_arm -->
+    <!-- Part arm -->
     <visual>
-      <origin xyz="-0 0.0792 -0.09" rpy="0 -0 -0" />
+      <origin xyz="0.04167 0.027633 0" rpy="-3.14159 -0 -2.55604" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/upper_arm.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/arm.stl" />
       </geometry>
-      <material name="upper_arm_material">
-        <color rgba="0.93 0.93 0.95 1" />
+      <material name="arm_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0 0.0792 -0.09" rpy="0 -0 -0" />
+      <origin xyz="0.04167 0.027633 0" rpy="-3.14159 -0 -2.55604" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/upper_arm.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_joint -->
-    <visual>
-      <origin xyz="-0.01 0.5466 -0.015841" rpy="-1.5708 -0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_joint.stl" />
-      </geometry>
-      <material name="size_3_joint_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.01 0.5466 -0.015841" rpy="-1.5708 -0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_joint.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_9 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl" />
-      </geometry>
-      <material name="size_4_joint_9_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_10 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl" />
-      </geometry>
-      <material name="size_4_joint_10_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_11 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl" />
-      </geometry>
-      <material name="size_4_joint_11_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__3.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_12 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl" />
-      </geometry>
-      <material name="size_4_joint_12_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__4.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_13 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl" />
-      </geometry>
-      <material name="size_4_joint_13_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__5.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_14 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl" />
-      </geometry>
-      <material name="size_4_joint_14_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__6.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_15 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl" />
-      </geometry>
-      <material name="size_4_joint_15_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__7.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint_16 -->
-    <visual>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl" />
-      </geometry>
-      <material name="size_4_joint_16_material">
-        <color rgba="0.00 0.42 0.68 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 -0.09" rpy="0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_4_joint__8.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_joint_lid_r06_simple -->
-    <visual>
-      <origin xyz="0.000602 0.613184 -0.09213" rpy="3.14159 -1.54438 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl" />
-      </geometry>
-      <material name="size_3_joint_lid_r06_simple_material">
-        <color rgba="0.00 0.55 0.85 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.000602 0.613184 -0.09213" rpy="3.14159 -1.54438 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl" />
-      </geometry>
-      <material name="size_3_elbow_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow_2 -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl" />
-      </geometry>
-      <material name="size_3_elbow_2_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow_3 -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl" />
-      </geometry>
-      <material name="size_3_elbow_3_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow_4 -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl" />
-      </geometry>
-      <material name="size_3_elbow_4_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow_5 -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl" />
-      </geometry>
-      <material name="size_3_elbow_5_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow_6 -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl" />
-      </geometry>
-      <material name="size_3_elbow_6_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_3_elbow_7 -->
-    <visual>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl" />
-      </geometry>
-      <material name="size_3_elbow_7_material">
-        <color rgba="0.28 0.33 0.40 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.013296 0.593917 -0.092671" rpy="0 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/arm.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Link lower_arm -->
-  <link name="lower_arm">
+  <!-- Link planetary_gearbox_3 -->
+  <link name="planetary_gearbox_3">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
-    <!-- Part lower_arm -->
+    <!-- Part joint_connector_2 -->
     <visual>
-      <origin xyz="-0.100378 0.296157 -0.037464" rpy="-1.5708 -0 1.88391" />
+      <origin xyz="-0.0197 -0.045956 -0.051" rpy="-1.16582 1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/lower_arm.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/joint_connector.stl" />
       </geometry>
-      <material name="lower_arm_material">
-        <color rgba="0.93 0.93 0.95 1" />
+      <material name="joint_connector_2_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.100378 0.296157 -0.037464" rpy="-1.5708 -0 1.88391" />
+      <origin xyz="-0.0197 -0.045956 -0.051" rpy="-1.16582 1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/lower_arm.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/joint_connector.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint -->
+    <!-- Part part_1_3 -->
     <visual>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0.0197 -0.045956 -0.051" rpy="1.5708 -0 -0.404976" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__2.stl" />
       </geometry>
-      <material name="size_2_joint_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_1_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0.0197 -0.045956 -0.051" rpy="1.5708 -0 -0.404976" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__2.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_2 -->
+    <!-- Part part_1_4 -->
     <visual>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0.040199 -0.067633 -0.051" rpy="1.5708 -0 -0.404976" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__3.stl" />
       </geometry>
-      <material name="size_2_joint_2_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_1_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0.040199 -0.067633 -0.051" rpy="1.5708 -0 -0.404976" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__3.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_3 -->
+    <!-- Part part_16_25 -->
     <visual>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0 0 -0.008" rpy="0 -0 -2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_2_joint_3_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_16_25_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0 0 -0.008" rpy="0 -0 -2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_4 -->
+    <!-- Part part_17_5 -->
     <visual>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="0 0 -0.03615" rpy="0 0 2.95754" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
       </geometry>
-      <material name="size_2_joint_4_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_17_5_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="0 0 -0.03615" rpy="0 0 2.95754" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
       </geometry>
     </collision>
-    <!-- Part 31602_step -->
+    <!-- Part part_16_26 -->
     <visual>
-      <origin xyz="-0.176063 0.543809 0.008" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0 0 -0.017" rpy="0 -0 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="31602_step_material">
-        <color rgba="0.18 0.18 0.20 1" />
+      <material name="part_16_26_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.176063 0.543809 0.008" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="-0 0 -0.017" rpy="0 -0 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_5 -->
+    <!-- Part part_15_13 -->
     <visual>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="0 0 -0.017" rpy="0 0 2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
       </geometry>
-      <material name="size_2_joint_5_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_15_13_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.176063 0.543809 0.0078" rpy="-1.5708 -0 -2.82848" />
+      <origin xyz="0 0 -0.017" rpy="0 0 2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_joint_lid_r06_simple_2 -->
+    <!-- Part part_16_27 -->
     <visual>
-      <origin xyz="0.000273 -0.000843 -0.06183" rpy="-3.14159 -1.54438 -1.25769" />
+      <origin xyz="-0 0 -0.017" rpy="0 -0 -2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_3_joint_lid_r06_simple_2_material">
-        <color rgba="0.00 0.55 0.85 1" />
+      <material name="part_16_27_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.000273 -0.000843 -0.06183" rpy="-3.14159 -1.54438 -1.25769" />
+      <origin xyz="-0 0 -0.017" rpy="0 -0 -2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_joint_lid_r06_simple.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_8 -->
+    <!-- Part spur_gear__24_teeth_13 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0.027773 0.023587 -0.0359" rpy="0 0 0.545025" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth.stl" />
       </geometry>
-      <material name="size_3_elbow_8_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="spur_gear__24_teeth_13_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0.027773 0.023587 -0.0359" rpy="0 0 0.545025" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_9 -->
+    <!-- Part part_16_28 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="-0 0 -0.017" rpy="0 0 2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_3_elbow_9_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="part_16_28_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="-0 0 -0.017" rpy="0 0 2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_10 -->
+    <!-- Part spur_gear__24_teeth_14 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0.025234 -0.027373 -0.036" rpy="0 0 2.5367" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__2.stl" />
       </geometry>
-      <material name="size_3_elbow_10_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="spur_gear__24_teeth_14_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0.025234 -0.027373 -0.036" rpy="0 0 2.5367" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__2.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_11 -->
+    <!-- Part part_7_3 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0 -0 -0.036" rpy="-0 0 2.73662" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_7.stl" />
       </geometry>
-      <material name="size_3_elbow_11_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="part_7_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0 -0 -0.036" rpy="-0 0 2.73662" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_7.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_12 -->
+    <!-- Part part_14_3 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0 -0 -0.036" rpy="-0 0 2.73662" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_14.stl" />
       </geometry>
-      <material name="size_3_elbow_12_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="part_14_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0 -0 -0.036" rpy="-0 0 2.73662" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_14.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_13 -->
+    <!-- Part part_16_29 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_3_elbow_13_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="part_16_29_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__6.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
-    <!-- Part size_3_elbow_14 -->
+    <!-- Part part_16_30 -->
     <visual>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="-0 0 -0.008" rpy="0 0 2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
-      <material name="size_3_elbow_14_material">
-        <color rgba="0.28 0.33 0.40 1" />
+      <material name="part_16_30_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0.00756 0.021769 -0.062371" rpy="-2.82848 -1.5708 0" />
+      <origin xyz="-0 0 -0.008" rpy="0 0 2.0944" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_3_elbow__7.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_12_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.036" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_12.stl" />
+      </geometry>
+      <material name="part_12_3_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.036" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_12.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_50x65x7_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.01" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_50x65x7.stl" />
+      </geometry>
+      <material name="bearing_50x65x7_3_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.01" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_50x65x7.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_13_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.036" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_13.stl" />
+      </geometry>
+      <material name="part_13_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.036" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_13.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_14 -->
+    <visual>
+      <origin xyz="0 0 -0.017" rpy="0 -0 -2.0944" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_14_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.017" rpy="0 -0 -2.0944" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__15_teeth_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.036" rpy="0 0 -0.512826" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__15_teeth.stl" />
+      </geometry>
+      <material name="spur_gear__15_teeth_3_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.036" rpy="0 0 -0.512826" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__15_teeth.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_15 -->
+    <visual>
+      <origin xyz="-0.027977 -0.02579 -0.036" rpy="0 -0 -2.69929" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__3.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_15_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.027977 -0.02579 -0.036" rpy="0 -0 -2.69929" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__3.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_31 -->
+    <visual>
+      <origin xyz="-0 0 -0.008" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_31_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0.008" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_1_5 -->
+    <visual>
+      <origin xyz="0 -0 -0.087" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1.stl" />
+      </geometry>
+      <material name="part_1_5_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.087" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_5_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5.stl" />
+      </geometry>
+      <material name="part_5_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_16 -->
+    <visual>
+      <origin xyz="-0.024927 0.029351 -0.0359" rpy="0 -0 -0.502173" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__4.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_16_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.024927 0.029351 -0.0359" rpy="0 -0 -0.502173" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__4.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_10x19x5_5 -->
+    <visual>
+      <origin xyz="0 -0 -0.0119" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+      <material name="bearing_10x19x5_5_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0119" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_17 -->
+    <visual>
+      <origin xyz="-0.003151 -0.038666 -0.0359" rpy="0 0 0.021426" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__5.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_17_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.003151 -0.038666 -0.0359" rpy="0 0 0.021426" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_6_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6.stl" />
+      </geometry>
+      <material name="part_6_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_15 -->
+    <visual>
+      <origin xyz="-0 0 -0.017" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_15_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0.017" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__24_teeth_18 -->
+    <visual>
+      <origin xyz="0.001584 0.038936 -0.036" rpy="-0 0 3.0603" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__6.stl" />
+      </geometry>
+      <material name="spur_gear__24_teeth_18_material">
+        <color rgba="0.980392 0.796078 0.262745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.001584 0.038936 -0.036" rpy="-0 0 3.0603" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__24_teeth__6.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_11_3 -->
+    <visual>
+      <origin xyz="0 -0 -0.036" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_11.stl" />
+      </geometry>
+      <material name="part_11_3_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.036" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_11.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_16 -->
+    <visual>
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_16_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0359" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part bearing_10x19x5_6 -->
+    <visual>
+      <origin xyz="0 -0 -0.0479" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+      <material name="bearing_10x19x5_6_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0479" rpy="-0 0 2.73662" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/bearing_10x19x5.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_32 -->
+    <visual>
+      <origin xyz="0 0 -0.0269" rpy="0 0 -1.23125" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_32_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0269" rpy="0 0 -1.23125" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_33 -->
+    <visual>
+      <origin xyz="0 -0 -0.0269" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_33_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0269" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_17_6 -->
+    <visual>
+      <origin xyz="0 0 -0.02715" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+      <material name="part_17_6_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.02715" rpy="0 0 2.95754" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_17.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_34 -->
+    <visual>
+      <origin xyz="0 -0 -0.0269" rpy="-0 -0 0.863142" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_34_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.0269" rpy="-0 -0 0.863142" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_17 -->
+    <visual>
+      <origin xyz="0 0 -0.0359" rpy="0 0 -1.23125" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_17_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0359" rpy="0 0 -1.23125" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_35 -->
+    <visual>
+      <origin xyz="0 0 -0.0359" rpy="0 0 -1.23125" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_35_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0359" rpy="0 0 -1.23125" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_15_18 -->
+    <visual>
+      <origin xyz="-0 0 -0.0359" rpy="-0 -0 0.863142" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="part_15_18_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0.0359" rpy="-0 -0 0.863142" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_15.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_16_36 -->
+    <visual>
+      <origin xyz="0 0 -0.0359" rpy="-0 -0 0.863142" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="part_16_36_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0359" rpy="-0 -0 0.863142" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_16.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Link joint_size_2 -->
-  <link name="joint_size_2">
+  <!-- Link wrist_rotation -->
+  <link name="wrist_rotation">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
-    <!-- Part size_2_joint_6 -->
+    <!-- Part part_4 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_4.stl" />
       </geometry>
-      <material name="size_2_joint_6_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_4.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_7 -->
+    <!-- Part part_5_4 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_5__2.stl" />
       </geometry>
-      <material name="size_2_joint_7_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_5_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_5__2.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_8 -->
+    <!-- Part part_2 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_2.stl" />
       </geometry>
-      <material name="size_2_joint_8_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_2_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_2.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_9 -->
+    <!-- Part part_3 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_3.stl" />
       </geometry>
-      <material name="size_2_joint_9_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_3_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
+      <origin xyz="0 0 0.04" rpy="-3.14159 -0 -0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_3.stl" />
       </geometry>
     </collision>
-    <!-- Part 31602_step_2 -->
+    <!-- Part part_1_6 -->
     <visual>
-      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 0" />
+      <origin xyz="0.0133 -0 -0.032" rpy="0 1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__3.stl" />
       </geometry>
-      <material name="31602_step_2_material">
-        <color rgba="0.18 0.18 0.20 1" />
+      <material name="part_1_6_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 0" />
+      <origin xyz="0.0133 -0 -0.032" rpy="0 1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_2_joint_10 -->
-    <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl" />
-      </geometry>
-      <material name="size_2_joint_10_material">
-        <color rgba="0.24 0.24 0.27 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__3.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Link joint_size_2_2 -->
-  <link name="joint_size_2_2">
+  <!-- Link wrist_pronation -->
+  <link name="wrist_pronation">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
-    <!-- Part size_2_joint_11 -->
+    <!-- Part part_8 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_8.stl" />
       </geometry>
-      <material name="size_2_joint_11_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_8_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_8.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_12 -->
+    <!-- Part part_1_7 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0.0103 0.0572 0.0264" rpy="1.5708 0 3.14159" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__3.stl" />
       </geometry>
-      <material name="size_2_joint_12_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_1_7_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0.0103 0.0572 0.0264" rpy="1.5708 0 3.14159" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__2.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_1__3.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_13 -->
+    <!-- Part part_7_4 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_7__2.stl" />
       </geometry>
-      <material name="size_2_joint_13_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_7_4_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__3.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_7__2.stl" />
       </geometry>
     </collision>
-    <!-- Part size_2_joint_14 -->
+    <!-- Part part_6_4 -->
     <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_6__2.stl" />
       </geometry>
-      <material name="size_2_joint_14_material">
-        <color rgba="0.24 0.24 0.27 1" />
+      <material name="part_6_4_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__4.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_6__2.stl" />
       </geometry>
     </collision>
-    <!-- Part 31602_step_3 -->
+    <!-- Part part_9 -->
     <visual>
-      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_9.stl" />
       </geometry>
-      <material name="31602_step_3_material">
-        <color rgba="0.18 0.18 0.20 1" />
+      <material name="part_9_material">
+        <color rgba="0.654902 0.584314 0.823529 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-1e-06 -0.0677 -0.054" rpy="0 0 -0" />
+      <origin xyz="0 -0.0823 0.0264" rpy="-1.5708 -1.5708 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/31602_step.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_2_joint_15 -->
-    <visual>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl" />
-      </geometry>
-      <material name="size_2_joint_15_material">
-        <color rgba="0.24 0.24 0.27 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1e-06 -0.0675 -0.054" rpy="-0 0 -0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/size_2_joint__5.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_9.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Link tool_flange -->
-  <link name="tool_flange">
+  <!-- Link claw -->
+  <link name="claw">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
-    <!-- Part tool_flange -->
+    <!-- Part part_3_2 -->
     <visual>
-      <origin xyz="-0.065893 0.02951 -0.028674" rpy="1.5708 -0 2.34692" />
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/tool_flange.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_3__2.stl" />
       </geometry>
-      <material name="tool_flange_material">
-        <color rgba="0.35 0.35 0.38 1" />
+      <material name="part_3_2_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.065893 0.02951 -0.028674" rpy="1.5708 -0 2.34692" />
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
       <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/tool_flange.stl" />
+        <mesh filename="package://ur10_robot_description/meshes/part_3__2.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_1_8 -->
+    <visual>
+      <origin xyz="0.008 -0.033 -0.02435" rpy="-1.5708 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1__4.stl" />
+      </geometry>
+      <material name="part_1_8_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.008 -0.033 -0.02435" rpy="-1.5708 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1__4.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_1_9 -->
+    <visual>
+      <origin xyz="-0.008 -0.033 -0.02435" rpy="-1.5708 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1__4.stl" />
+      </geometry>
+      <material name="part_1_9_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.008 -0.033 -0.02435" rpy="-1.5708 -1.5708 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_1__4.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_5_5 -->
+    <visual>
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5__3.stl" />
+      </geometry>
+      <material name="part_5_5_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_5__3.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_6_5 -->
+    <visual>
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6__3.stl" />
+      </geometry>
+      <material name="part_6_5_material">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_6__3.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__16_teeth -->
+    <visual>
+      <origin xyz="-0.002399 0.00075 -0.001203" rpy="1.5708 -0.130586 -0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__16_teeth.stl" />
+      </geometry>
+      <material name="spur_gear__16_teeth_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.002399 0.00075 -0.001203" rpy="1.5708 -0.130586 -0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__16_teeth.stl" />
+      </geometry>
+    </collision>
+    <!-- Part part_4_2 -->
+    <visual>
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_4__2.stl" />
+      </geometry>
+      <material name="part_4_2_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0" rpy="1.5708 -0 0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/part_4__2.stl" />
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__16_teeth_2 -->
+    <visual>
+      <origin xyz="0.002399 0.00075 -0.001203" rpy="1.5708 0.130586 -0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__16_teeth__2.stl" />
+      </geometry>
+      <material name="spur_gear__16_teeth_2_material">
+        <color rgba="0.85098 0.756863 0.866667 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.002399 0.00075 -0.001203" rpy="1.5708 0.130586 -0" />
+      <geometry>
+        <mesh filename="package://ur10_robot_description/meshes/spur_gear__16_teeth__2.stl" />
       </geometry>
     </collision>
   </link>
-  <!-- Joint from joint_size_2_2 to tool_flange -->
-  <joint name="Revolute_4" type="revolute">
-    <origin xyz="-1e-06 -0.0617 -0.054" rpy="-1.5708 0 -0" />
-    <parent link="joint_size_2_2" />
-    <child link="tool_flange" />
-    <axis xyz="0 0 1" />
-    <limit effort="54" velocity="6.28" lower="-3.141592653589793" upper="3.141592653589793" />
-  </joint>
-  <!-- Joint from joint_size_2 to joint_size_2_2 -->
-  <joint name="Revolute_3" type="revolute">
-    <origin xyz="-1e-06 -0.0617 -0.054" rpy="1.5708 1.39214 3.14159" />
-    <parent link="joint_size_2" />
-    <child link="joint_size_2_2" />
-    <axis xyz="0 0 1" />
-    <limit effort="54" velocity="6.28" lower="-3.141592653589793" upper="3.141592653589793" />
-  </joint>
-  <!-- Joint from lower_arm to joint_size_2 -->
-  <joint name="Revolute_2" type="revolute">
-    <origin xyz="-0.176063 0.543809 0.002" rpy="-3.14159 0 1.65485" />
-    <parent link="lower_arm" />
-    <child link="joint_size_2" />
-    <axis xyz="0 0 1" />
-    <limit effort="54" velocity="6.28" lower="-3.141592653589793" upper="3.141592653589793" />
-  </joint>
-  <!-- Joint from joint_size_4_2 to lower_arm -->
-  <joint name="elbow" type="revolute">
-    <origin xyz="0.000601 0.612299 -0.021891" rpy="3.14159 -0 -0" />
-    <parent link="joint_size_4_2" />
-    <child link="lower_arm" />
+  <!-- Joint from wrist_pronation to claw -->
+  <joint name="wrist2" type="revolute">
+    <origin xyz="0 0.0699 0.0264" rpy="-1.5708 -0.528968 -3.14159" />
+    <parent link="wrist_pronation" />
+    <child link="claw" />
     <axis xyz="0 0 1" />
     <limit effort="150" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793" />
   </joint>
-  <!-- Joint from joint_size_4 to joint_size_4_2 -->
-  <joint name="shoulder" type="revolute">
-    <origin xyz="-0 0.086 -0.09" rpy="-1.5708 -0.257718 -3.14159" />
-    <parent link="joint_size_4" />
-    <child link="joint_size_4_2" />
+  <!-- Joint from wrist_rotation to wrist_pronation -->
+  <joint name="wristrotate" type="revolute">
+    <origin xyz="-0.0264 -0 -0.0423" rpy="-1.5708 1.11985 -1.5708" />
+    <parent link="wrist_rotation" />
+    <child link="wrist_pronation" />
     <axis xyz="0 0 1" />
-    <limit effort="300" velocity="3.15" lower="-0.26588" upper="1.82851" />
+    <limit effort="150" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793" />
   </joint>
-  <!-- Joint from base to joint_size_4 -->
-  <joint name="Revolute_base" type="revolute">
-    <origin xyz="-0 -0 0.038" rpy="-3.14159 0 3.14159" />
-    <parent link="base" />
-    <child link="joint_size_4" />
+  <!-- Joint from planetary_gearbox_3 to wrist_rotation -->
+  <joint name="wrist1" type="revolute">
+    <origin xyz="-0.034446 -0.083155 -0.051001" rpy="1.5708 -0.750346 2.73662" />
+    <parent link="planetary_gearbox_3" />
+    <child link="wrist_rotation" />
+    <axis xyz="0 0 1" />
+    <limit effort="150" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793" />
+  </joint>
+  <!-- Joint from arm to planetary_gearbox_3 -->
+  <joint name="arm" type="revolute">
+    <origin xyz="0.083341 0.055266 -0" rpy="3.14159 -0 -1.93223" />
+    <parent link="arm" />
+    <child link="planetary_gearbox_3" />
+    <axis xyz="0 0 1" />
+    <limit effort="150" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793" />
+  </joint>
+  <!-- Joint from planetary_gearbox_2 to arm -->
+  <joint name="shoulder" type="revolute">
+    <origin xyz="-0.051 0 -0.05" rpy="-1.5708 0.062436 -1.5708" />
+    <parent link="planetary_gearbox_2" />
+    <child link="arm" />
     <axis xyz="0 0 1" />
     <limit effort="300" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793" />
   </joint>
-<link name="environment">
-    <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="0" />
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
-    </inertial>
-    <!-- Part table_big -->
-    <visual>
-      <origin xyz="0 0 0.15" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/table_big.stl" />
-      </geometry>
-      <material name="table_big_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0.15" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/table_big.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_2 -->
-    <visual>
-      <origin xyz="-0.340697 0.03825 -0.500544" rpy="0.959931 0 0.392699" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_2_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.340697 0.03825 -0.500544" rpy="0.959931 0 0.392699" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ïðèñïîñîáëåíèå_äëÿ_ñâàðêè -->
-    <visual>
-      <origin xyz="-0 -9.3e-05 -0.015" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/prisposoblenie_dlya_svarki.stl" />
-      </geometry>
-      <material name="ïðèñïîñîáëåíèå_äëÿ_ñâàðêè_material">
-        <color rgba="0.811765 0.858824 0.898039 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 -9.3e-05 -0.015" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/prisposoblenie_dlya_svarki.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_2_2 -->
-    <visual>
-      <origin xyz="0.340697 0.03825 -0.500544" rpy="0.959931 -0 -0.392699" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_2_2_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.340697 0.03825 -0.500544" rpy="0.959931 -0 -0.392699" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ðåáðî_40õ40 -->
-    <visual>
-      <origin xyz="0.232231 -0.134172 -0.31852" rpy="0.558505 0 -2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/rebro_40kh40.stl" />
-      </geometry>
-      <material name="ðåáðî_40õ40_material">
-        <color rgba="1 0.756863 0.054902 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.232231 -0.134172 -0.31852" rpy="0.558505 0 -2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/rebro_40kh40.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_2_3 -->
-    <visual>
-      <origin xyz="-0.203554 0.275788 -0.500544" rpy="0.959931 -0 1.7017" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_2_3_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.203554 0.275788 -0.500544" rpy="0.959931 -0 1.7017" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_2_4 -->
-    <visual>
-      <origin xyz="-0.137143 -0.314317 -0.500544" rpy="0.959931 -0 -2.48709" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_2_4_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.137143 -0.314317 -0.500544" rpy="0.959931 -0 -2.48709" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ðåáðî_40õ40_2 -->
-    <visual>
-      <origin xyz="-0.232231 -0.134172 -0.31852" rpy="0.558505 0 2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/rebro_40kh40.stl" />
-      </geometry>
-      <material name="ðåáðî_40õ40_2_material">
-        <color rgba="1 0.756863 0.054902 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.232231 -0.134172 -0.31852" rpy="0.558505 0 2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/rebro_40kh40.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ðåáðî_40õ40_3 -->
-    <visual>
-      <origin xyz="0 0.268064 -0.31852" rpy="0.558505 0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/rebro_40kh40.stl" />
-      </geometry>
-      <material name="ðåáðî_40õ40_3_material">
-        <color rgba="1 0.756863 0.054902 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0.268064 -0.31852" rpy="0.558505 0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/rebro_40kh40.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_1 -->
-    <visual>
-      <origin xyz="-0 -0.158102 -0.347" rpy="-3.14159 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_1.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_1_material">
-        <color rgba="0.866667 0.321569 0.156863 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 -0.158102 -0.347" rpy="-3.14159 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_1_2 -->
-    <visual>
-      <origin xyz="-0.13684 0.078911 -0.347" rpy="1.0472 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_1.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_1_2_material">
-        <color rgba="0.866667 0.321569 0.156863 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.13684 0.078911 -0.347" rpy="1.0472 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_1_3 -->
-    <visual>
-      <origin xyz="0.13684 0.078911 -0.347" rpy="-1.0472 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_1.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_1_3_material">
-        <color rgba="0.866667 0.321569 0.156863 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.13684 0.078911 -0.347" rpy="-1.0472 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_2_5 -->
-    <visual>
-      <origin xyz="0.203554 0.275788 -0.500544" rpy="0.959931 0 -1.7017" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_2_5_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.203554 0.275788 -0.500544" rpy="0.959931 0 -1.7017" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part ñâÿçü_20õ40_2_6 -->
-    <visual>
-      <origin xyz="0.137143 -0.314317 -0.500544" rpy="0.959931 0 2.48709" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-      <material name="ñâÿçü_20õ40_2_6_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.137143 -0.314317 -0.500544" rpy="0.959931 0 2.48709" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/svyaz_20kh40_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part äèñê_âåðõíèé -->
-    <visual>
-      <origin xyz="-0 -9.3e-05 -0.01" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/disk_verkhniy.stl" />
-      </geometry>
-      <material name="äèñê_âåðõíèé_material">
-        <color rgba="0.105882 0.372549 0.666667 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 -9.3e-05 -0.01" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/disk_verkhniy.stl" />
-      </geometry>
-    </collision>
-    <!-- Part glory_part2 -->
-    <visual>
-      <origin xyz="0.07 0.285 0.47" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part2.stl" />
-      </geometry>
-      <material name="glory_part2_material">
-        <color rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.07 0.285 0.47" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part glory_part1 -->
-    <visual>
-      <origin xyz="0.07 0.285 0.15" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-      <material name="glory_part1_material">
-        <color rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.07 0.285 0.15" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part glory_part1_2 -->
-    <visual>
-      <origin xyz="-0.53 0.285 0.15" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-      <material name="glory_part1_2_material">
-        <color rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.53 0.285 0.15" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part glory_part2_2 -->
-    <visual>
-      <origin xyz="-0.07 -0.285 0.47" rpy="-0 0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part2.stl" />
-      </geometry>
-      <material name="glory_part2_2_material">
-        <color rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.07 -0.285 0.47" rpy="-0 0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part glory_part1_3 -->
-    <visual>
-      <origin xyz="-0.07 -0.285 0.15" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-      <material name="glory_part1_3_material">
-        <color rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.07 -0.285 0.15" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part glory_part1_4 -->
-    <visual>
-      <origin xyz="0.53 -0.285 0.15" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-      <material name="glory_part1_4_material">
-        <color rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.53 -0.285 0.15" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/glory_part1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part base -->
-    <!-- Part tool_flange -->
-    <!-- Part lower_arm -->
-    <!-- Part base_2 -->
-    <!-- Part upper_arm -->
-    <!-- Part size_3_joint -->
-    <!-- Part flange__diameter_0_133_meter_length_1_2_meter -->
-    <visual>
-      <origin xyz="0 0 0.008" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/flange_diameter_0_133_meter_length_1_2_meter.stl" />
-      </geometry>
-      <material name="flange__diameter_0_133_meter_length_1_2_meter_material">
-        <color rgba="0.615686 0.811765 0.929412 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0.008" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/flange_diameter_0_133_meter_length_1_2_meter.stl" />
-      </geometry>
-    </collision>
-    <!-- Part flange__b152266e8dba5b8c0f330436192b35da -->
-    <visual>
-      <origin xyz="0 0 0.816" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/flange_b152266e8dba5b8c0f330436192b35da.stl" />
-      </geometry>
-      <material name="flange__b152266e8dba5b8c0f330436192b35da_material">
-        <color rgba="0.615686 0.811765 0.929412 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0.816" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/flange_b152266e8dba5b8c0f330436192b35da.stl" />
-      </geometry>
-    </collision>
-    <!-- Part tube133__diameter_0_133_meter_length_0_8_meter -->
-    <visual>
-      <origin xyz="0 0 0.008" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/tube133_diameter_0_133_meter_length_0_8_meter.stl" />
-      </geometry>
-      <material name="tube133__diameter_0_133_meter_length_0_8_meter_material">
-        <color rgba="0.615686 0.811765 0.929412 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0.008" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/tube133_diameter_0_133_meter_length_0_8_meter.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ -->
-    <visual>
-      <origin xyz="0.372391 0.214907 -0.67" rpy="0 -0 -2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.372391 0.214907 -0.67" rpy="0 -0 -2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_ñâÿçåé -->
-    <visual>
-      <origin xyz="0.372391 0.214907 -0.627" rpy="0 -0 -2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_svyazey.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_ñâÿçåé_material">
-        <color rgba="0.105882 0.372549 0.666667 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.372391 0.214907 -0.627" rpy="0 -0 -2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_svyazey.stl" />
-      </geometry>
-    </collision>
-    <!-- Part âòóëêà_ðåçüáîâàÿ -->
-    <visual>
-      <origin xyz="0 -0.476999 -0.676" rpy="0 0 -3.14159" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-      <material name="âòóëêà_ðåçüáîâàÿ_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 -0.476999 -0.676" rpy="0 0 -3.14159" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_2 -->
-    <visual>
-      <origin xyz="-0 0.429907 -0.67" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_2_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 0.429907 -0.67" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_3 -->
-    <visual>
-      <origin xyz="-0.372391 -0.215093 -0.67" rpy="-0 -0 0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_3_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.372391 -0.215093 -0.67" rpy="-0 -0 0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_ñâÿçåé_2 -->
-    <visual>
-      <origin xyz="0 -0.430093 -0.627" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_svyazey.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_ñâÿçåé_2_material">
-        <color rgba="0.105882 0.372549 0.666667 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 -0.430093 -0.627" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_svyazey.stl" />
-      </geometry>
-    </collision>
-    <!-- Part îïîðà_øàðíèðíàÿ -->
-    <visual>
-      <origin xyz="0.413013 0.23836 -0.709" rpy="0 -0 -1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-      <material name="îïîðà_øàðíèðíàÿ_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.413013 0.23836 -0.709" rpy="0 -0 -1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part òðóáà_40õ40õ500 -->
-    <visual>
-      <origin xyz="-0.413013 -9.3e-05 -0.647" rpy="-1.5708 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500.stl" />
-      </geometry>
-      <material name="òðóáà_40õ40õ500_material">
-        <color rgba="0.105882 0.372549 0.666667 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.413013 -9.3e-05 -0.647" rpy="-1.5708 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1 -->
-    <visual>
-      <origin xyz="-0.372391 -0.215093 -0.624" rpy="-3.14159 0 0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_verkhnyaya_1.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1_material">
-        <color rgba="0.603922 0.647059 0.686275 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.372391 -0.215093 -0.624" rpy="-3.14159 0 0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_verkhnyaya_1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part âòóëêà_ðåçüáîâàÿ_2 -->
-    <visual>
-      <origin xyz="0.413013 -0.238546 -0.676" rpy="0 -0 -2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-      <material name="âòóëêà_ðåçüáîâàÿ_2_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.413013 -0.238546 -0.676" rpy="0 -0 -2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1_2 -->
-    <visual>
-      <origin xyz="-0 0.429907 -0.624" rpy="-3.14159 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_verkhnyaya_1.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1_2_material">
-        <color rgba="0.603922 0.647059 0.686275 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 0.429907 -0.624" rpy="-3.14159 -0 -1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_verkhnyaya_1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part âòóëêà_ðåçüáîâàÿ_3 -->
-    <visual>
-      <origin xyz="-0.413013 0.23836 -0.676" rpy="-0 0 1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-      <material name="âòóëêà_ðåçüáîâàÿ_3_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.413013 0.23836 -0.676" rpy="-0 0 1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1_3 -->
-    <visual>
-      <origin xyz="0.372391 -0.215093 -0.624" rpy="-3.14159 0 2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_verkhnyaya_1.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_âåðõíÿÿ_1_3_material">
-        <color rgba="0.603922 0.647059 0.686275 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.372391 -0.215093 -0.624" rpy="-3.14159 0 2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_verkhnyaya_1.stl" />
-      </geometry>
-    </collision>
-    <!-- Part îïîðà_øàðíèðíàÿ_2 -->
-    <visual>
-      <origin xyz="-0 0.476813 -0.709" rpy="-0 -0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-      <material name="îïîðà_øàðíèðíàÿ_2_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 0.476813 -0.709" rpy="-0 -0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part òðóáà_40õ40õ500_2 -->
-    <visual>
-      <origin xyz="0.206506 0.357586 -0.647" rpy="2.61799 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_2.stl" />
-      </geometry>
-      <material name="òðóáà_40õ40õ500_2_material">
-        <color rgba="0.866667 0.321569 0.156863 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.206506 0.357586 -0.647" rpy="2.61799 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_2.stl" />
-      </geometry>
-    </collision>
-    <!-- Part îïîðà_øàðíèðíàÿ_3 -->
-    <visual>
-      <origin xyz="-0.413013 0.23836 -0.709" rpy="-0 0 1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-      <material name="îïîðà_øàðíèðíàÿ_3_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.413013 0.23836 -0.709" rpy="-0 0 1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part îïîðà_øàðíèðíàÿ_4 -->
-    <visual>
-      <origin xyz="-0.413013 -0.238546 -0.709" rpy="-0 0 2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-      <material name="îïîðà_øàðíèðíàÿ_4_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.413013 -0.238546 -0.709" rpy="-0 0 2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part âòóëêà_ðåçüáîâàÿ_4 -->
-    <visual>
-      <origin xyz="0.413013 0.23836 -0.676" rpy="0 -0 -1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-      <material name="âòóëêà_ðåçüáîâàÿ_4_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.413013 0.23836 -0.676" rpy="0 -0 -1.0472" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part îïîðà_øàðíèðíàÿ_5 -->
-    <visual>
-      <origin xyz="0.413013 -0.238546 -0.709" rpy="0 -0 -2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-      <material name="îïîðà_øàðíèðíàÿ_5_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.413013 -0.238546 -0.709" rpy="0 -0 -2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part îïîðà_øàðíèðíàÿ_6 -->
-    <visual>
-      <origin xyz="0 -0.476999 -0.709" rpy="0 0 -3.14159" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-      <material name="îïîðà_øàðíèðíàÿ_6_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 -0.476999 -0.709" rpy="0 0 -3.14159" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/opora_sharnirnaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_4 -->
-    <visual>
-      <origin xyz="-0.372391 0.214907 -0.67" rpy="-0 -0 -0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_4_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.372391 0.214907 -0.67" rpy="-0 -0 -0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part òðóáà_40õ40õ500_3 -->
-    <visual>
-      <origin xyz="-0.206506 -0.357773 -0.647" rpy="-0.523599 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_3.stl" />
-      </geometry>
-      <material name="òðóáà_40õ40õ500_3_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.206506 -0.357773 -0.647" rpy="-0.523599 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_3.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_ñâÿçåé_3 -->
-    <visual>
-      <origin xyz="-0.372391 0.214907 -0.627" rpy="-0 -0 -0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_svyazey.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_ñâÿçåé_3_material">
-        <color rgba="0.105882 0.372549 0.666667 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.372391 0.214907 -0.627" rpy="-0 -0 -0.523599" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_svyazey.stl" />
-      </geometry>
-    </collision>
-    <!-- Part òðóáà_40õ40õ500_4 -->
-    <visual>
-      <origin xyz="-0.206506 0.357586 -0.647" rpy="-2.61799 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_4.stl" />
-      </geometry>
-      <material name="òðóáà_40õ40õ500_4_material">
-        <color rgba="1 0.756863 0.054902 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.206506 0.357586 -0.647" rpy="-2.61799 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_4.stl" />
-      </geometry>
-    </collision>
-    <!-- Part òðóáà_40õ40õ500_5 -->
-    <visual>
-      <origin xyz="0.206506 -0.357773 -0.647" rpy="0.523599 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_5.stl" />
-      </geometry>
-      <material name="òðóáà_40õ40õ500_5_material">
-        <color rgba="0.603922 0.647059 0.686275 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.206506 -0.357773 -0.647" rpy="0.523599 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_5.stl" />
-      </geometry>
-    </collision>
-    <!-- Part âòóëêà_ðåçüáîâàÿ_5 -->
-    <visual>
-      <origin xyz="-0 0.476813 -0.676" rpy="-0 -0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-      <material name="âòóëêà_ðåçüáîâàÿ_5_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0 0.476813 -0.676" rpy="-0 -0 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_5 -->
-    <visual>
-      <origin xyz="0 -0.430093 -0.67" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_5_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 -0.430093 -0.67" rpy="0 0 1.5708" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_6 -->
-    <visual>
-      <origin xyz="0.372391 -0.215093 -0.67" rpy="0 0 2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-      <material name="êîñûíêà_îñíîâàíèÿ_íèæíåãî_íèæíÿÿ_6_material">
-        <color rgba="0.376471 0.415686 0.45098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.372391 -0.215093 -0.67" rpy="0 0 2.61799" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/kosyinka_osnovaniya_nizhnego_nizhnyaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part òðóáà_40õ40õ500_6 -->
-    <visual>
-      <origin xyz="0.413013 -9.3e-05 -0.647" rpy="1.5708 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_6.stl" />
-      </geometry>
-      <material name="òðóáà_40õ40õ500_6_material">
-        <color rgba="0.85098 0.756863 0.870588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.413013 -9.3e-05 -0.647" rpy="1.5708 -1.5708 0" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/truba_40kh40kh500_6.stl" />
-      </geometry>
-    </collision>
-    <!-- Part âòóëêà_ðåçüáîâàÿ_6 -->
-    <visual>
-      <origin xyz="-0.413013 -0.238546 -0.676" rpy="-0 0 2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-      <material name="âòóëêà_ðåçüáîâàÿ_6_material">
-        <color rgba="0.564706 0.811765 0.945098 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.413013 -0.238546 -0.676" rpy="-0 0 2.0944" />
-      <geometry>
-        <mesh filename="package://ur10_robot_description/meshes/vtulka_rez_bovaya.stl" />
-      </geometry>
-    </collision>
-    <!-- Part size_4_joint -->
-    <!-- Part size_4_joint_2 -->
-    <!-- Part size_4_joint_3 -->
-    <!-- Part size_4_joint_4 -->
-    <!-- Part size_4_joint_5 -->
-    <!-- Part size_4_joint_6 -->
-    <!-- Part size_4_joint_7 -->
-    <!-- Part size_4_joint_8 -->
-    <!-- Part size_4_joint_9 -->
-    <!-- Part size_4_joint_10 -->
-    <!-- Part size_4_joint_11 -->
-    <!-- Part size_4_joint_12 -->
-    <!-- Part size_4_joint_13 -->
-    <!-- Part size_4_joint_14 -->
-    <!-- Part size_4_joint_15 -->
-    <!-- Part size_4_joint_16 -->
-    <!-- Part size_2_joint -->
-    <!-- Part size_2_joint_2 -->
-    <!-- Part size_2_joint_3 -->
-    <!-- Part size_2_joint_4 -->
-    <!-- Part 31602_step -->
-    <!-- Part size_2_joint_5 -->
-    <!-- Part size_2_joint_6 -->
-    <!-- Part size_2_joint_7 -->
-    <!-- Part size_2_joint_8 -->
-    <!-- Part size_2_joint_9 -->
-    <!-- Part 31602_step_2 -->
-    <!-- Part size_2_joint_10 -->
-    <!-- Part size_3_joint_lid_r06_simple -->
-    <!-- Part size_3_elbow -->
-    <!-- Part size_3_elbow_2 -->
-    <!-- Part size_3_elbow_3 -->
-    <!-- Part size_3_elbow_4 -->
-    <!-- Part size_3_elbow_5 -->
-    <!-- Part size_3_elbow_6 -->
-    <!-- Part size_3_elbow_7 -->
-    <!-- Part size_2_joint_11 -->
-    <!-- Part size_2_joint_12 -->
-    <!-- Part size_2_joint_13 -->
-    <!-- Part size_2_joint_14 -->
-    <!-- Part 31602_step_3 -->
-    <!-- Part size_2_joint_15 -->
-    <!-- Part size_3_joint_lid_r06_simple_2 -->
-    <!-- Part size_3_elbow_8 -->
-    <!-- Part size_3_elbow_9 -->
-    <!-- Part size_3_elbow_10 -->
-    <!-- Part size_3_elbow_11 -->
-    <!-- Part size_3_elbow_12 -->
-    <!-- Part size_3_elbow_13 -->
-    <!-- Part size_3_elbow_14 -->
-  </link>
-<joint name="environment_mount" type="fixed"><parent link="base" /><child link="environment" /><origin xyz="5.99968e-05 -0.000298073 -0.816" rpy="-3.67321e-06 0 3.14159" /></joint></robot>
+  <!-- Joint from planetary_gearbox to planetary_gearbox_2 -->
+  <joint name="base" type="revolute">
+    <origin xyz="-0 0.00144 0.087" rpy="-3.14159 -0 2.51358" />
+    <parent link="planetary_gearbox" />
+    <child link="planetary_gearbox_2" />
+    <axis xyz="0 0 1" />
+    <limit effort="150" velocity="3.15" lower="-3.141592653589793" upper="3.141592653589793" />
+  </joint>
+</robot>

@@ -12,7 +12,7 @@
     // Onshape assembly URL (must be the ASSEMBLY tab).
     // NOTE: points at the "UR10" tab (pure robot with the 6 revolute mates),
     // NOT the "Whole setup" tab (table + stand + glory machine).
-    "url": "https://cad.onshape.com/documents/bffb4cd2fd50e50786659d67/w/3349bfe1f84bd89ee3f7e342/e/38aaf680dcf8908fc89106f1",
+    "url": "https://cad.onshape.com/documents/38d82539467ad219004ba3e8/w/2cdeedd6035a648c2aeb8834/e/70f8436d080925bbb00cb8bf",
 
     // Output format / names
     "output_format": "urdf",

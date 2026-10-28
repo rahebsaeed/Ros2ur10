@@ -79,6 +79,33 @@ feature updates.
   disconnected trees: fasten stray parts to the robot (or `fix_` mates), or
   exclude them via `ignore` in `export/config.json`.
 
+## `make sync` → "No '<root link>' part occurrence under the robot instance"
+
+Example (new robot exported, cell still from the old project):
+
+```
+[FAIL] No 'planetary_gearbox' part occurrence under the robot
+       instance 'UR10' in the Whole setup dump.
+       Robot parts found: ['Base <2>', 'Lower arm <1>', ...]
+```
+
+`sync` computes the environment mount from the **cell tab** declared in
+`export_env/config.json` (via `export/inspect/whole_setup.json`). The failure
+means the new robot's root link was not found inside that dump. Causes, in
+order of likelihood:
+
+1. **Stale dump** — the robot changed (new tab/document) since the last dump.
+   Fix: `make urdf-env` (re-dumps the cell tab configured in
+   `export_env/config.json`).
+2. **Wrong `robot_instance`** — the instance of the robot inside the cell tab
+   has another name. Fix: set `robot_instance` in `export/config.json`
+   (prefix match: `"UR10"` matches `'UR10 <1>'`). The error prints the
+   available top-level instances.
+3. **The robot is not in that cell at all** (new robot, no cell yet) —
+   there is nothing to mount. Fix: delete `export_env/environment.urdf`
+   and re-run `make sync` — the environment merge is skipped automatically
+   (robot-only URDF). See docs/08 → "Environment mount".
+
 ## RViz panels eat the whole window (3D view squeezed to a strip)
 
 RViz2 **saves its layout back into the `.rviz` file on exit** (it writes to the
